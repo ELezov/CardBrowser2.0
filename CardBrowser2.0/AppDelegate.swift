@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import Moscapsule
 
 final class MQTT {
@@ -79,7 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         let store = Store(state: initialState, reduce: reduce)
         let mqtt = MQTT()
-        
         
         let dispatchAction = CommandWith(action: store.dispatch)
         
